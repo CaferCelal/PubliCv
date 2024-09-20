@@ -1,0 +1,96 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.auth-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+    font-size: 16px; /* Ensure label font size is consistent */
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Space for the icon */
+    box-sizing: border-box;
+    font-size: 16px; /* Consistent font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-input-container {
+    position: relative;
+}
+
+.password-input-container input {
+    width: 100%;
+}
+
+.visibility-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px; /* Adjust width to fit well with the input field */
+    height: 24px; /* Adjust height to fit well with the input field */
+    cursor: pointer;
+    pointer-events: auto; /* Ensure the icon is clickable */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Space above the button group */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width buttons */
+    font-size: 16px; /* Consistent font size */
+}
+
+button:first-of-type {
+    background-color: #007bff;
+    color: white;
+}
+
+button:last-of-type {
+    background-color: #28a745;
+    color: white;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #007bff; /* Color to match the primary button */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
